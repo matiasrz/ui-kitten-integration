@@ -1,6 +1,21 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      // "app/*": ["app/*"],
+      // "config/*": ["app/_config/*"],
+      // "environment/*": ["environments/*"],
+      // "shared/*": ["app/_shared/*"],
+      // "helpers/*": ["helpers/*"],
+      // "tests/*": ["tests/*"]
+      "screens/*": ["src/screens/*"],
+      "routes/*": ["src/routes/*"],
+      "atoms/*": ["src/components/atoms/*"],
+    },
+  },
+  "exclude": [
+    "__tests__/**/*-test.ts"
+  ]
 }
